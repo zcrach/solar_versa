@@ -1,16 +1,42 @@
-[INFO] [2022-06-23 22:47:45,770]: __________[[Currently on run number: 1]]__________ 
-[INFO] [2022-06-23 22:47:45,770]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
-[ERROR] [2022-06-23 22:48:15,789]: ERROR! SSH timed out. Here is what SSH said: 
-[INFO] [2022-06-23 22:48:15,790]: b'' 
-[INFO] [2022-06-23 22:48:15,790]: <class 'pexpect.exceptions.TIMEOUT'> 
-[INFO] [2022-06-23 22:48:16,592]: Unable to login, will try again in one minute. 
-[ERROR] [2022-06-23 22:49:46,677]: ERROR! SSH timed out. Here is what SSH said: 
-[INFO] [2022-06-23 22:49:46,677]: b'' 
-[INFO] [2022-06-23 22:49:46,677]: <class 'pexpect.exceptions.TIMEOUT'> 
-[INFO] [2022-06-23 22:49:47,479]: Unable to login, will try again in one minute. 
-[INFO] [2022-06-23 22:52:43,106]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
-[INFO] [2022-06-23 22:52:43,106]: __________[[Currently on run number: 1]]__________ 
-[ERROR] [2022-06-23 22:53:13,121]: ERROR! SSH timed out. Here is what SSH said: 
-[INFO] [2022-06-23 22:53:13,123]: b'' 
-[INFO] [2022-06-23 22:53:13,124]: <class 'pexpect.exceptions.TIMEOUT'> 
-[INFO] [2022-06-23 22:53:13,926]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 23:15:55,737]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
+[INFO] [2022-06-23 23:15:55,737]: __________[[Currently on run number: 1]]__________ 
+[ERROR] [2022-06-23 23:16:25,772]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 23:16:25,774]: b'' 
+[INFO] [2022-06-23 23:16:25,774]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 23:16:26,575]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 23:17:26,636]: __________[[Currently on run number: 2]]__________ 
+[ERROR] [2022-06-23 23:17:56,671]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 23:17:56,672]: b'' 
+[INFO] [2022-06-23 23:17:56,672]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 23:17:57,475]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 23:18:57,535]: __________[[Currently on run number: 3]]__________ 
+[ERROR] [2022-06-23 23:19:27,571]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 23:19:27,572]: b'' 
+[INFO] [2022-06-23 23:19:27,572]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 23:19:28,375]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 23:20:28,435]: __________[[Currently on run number: 4]]__________ 
+[ERROR] [2022-06-23 23:20:58,463]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 23:20:58,464]: b'' 
+[INFO] [2022-06-23 23:20:58,464]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 23:20:59,266]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 23:21:59,327]: __________[[Currently on run number: 5]]__________ 
+[ERROR] [2022-06-23 23:22:29,365]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 23:22:29,365]: b'' 
+[INFO] [2022-06-23 23:22:29,365]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 23:22:30,167]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 23:23:30,227]: __________[[Currently on run number: 6]]__________ 
+[ERROR] [2022-06-23 23:24:00,261]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 23:24:00,261]: b'' 
+[INFO] [2022-06-23 23:24:00,262]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 23:24:01,063]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 23:25:01,121]: __________[[Currently on run number: 7]]__________ 
+[ERROR] [2022-06-23 23:25:31,157]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 23:25:31,158]: b'' 
+[INFO] [2022-06-23 23:25:31,158]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 23:25:31,961]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 23:26:32,009]: __________[[Currently on run number: 8]]__________ 
+[ERROR] [2022-06-23 23:27:02,024]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 23:27:02,025]: b'' 
+[INFO] [2022-06-23 23:27:02,026]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 23:27:02,828]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 23:28:02,884]: __________[[Currently on run number: 9]]__________ 
