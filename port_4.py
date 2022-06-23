@@ -56,8 +56,10 @@ class VersaAttributes:
     def versa_parse_output(self, ch, command, matching_string):
         output = VersaConnect.send_and_expect(self, ch, command, prompt)
         variable_get = re.findall(r"[\n\r].*" + matching_string + "\s*([^\n\r\t]*)", output)
-        return variable_get[0]
-
+        try:
+            return variable_get[0]
+        except:
+            return variable_get
     
 class VersaConnect:
     def __init__(self, hostname, username, password):
@@ -160,9 +162,6 @@ class VersaConnect:
 
 
 def main():
-    global run_number
-    run_number += 1
-    logger.info(f"__________[[Currently on run number: {run_number}]]__________")
 
     device_completed = False
     try:
@@ -172,6 +171,9 @@ def main():
 
     try:
         while True:
+            global run_number
+            run_number += 1
+            logger.info(f"__________[[Currently on run number: {run_number}]]__________")
             versa_login = VersaConnect(hostname, username, password)
             if not versa_login.login():
                 logger.info("Unable to login, will try again in one minute.")
@@ -190,15 +192,18 @@ def main():
                             logger.info(f"Device has the correct Version {Versa_CPE.release}")
                             if "WAN1-Transport-VR" in Versa_CPE.show_interfaces:
                                 logger.info(f"Device has WAN interface in correct VRF.")
-                                logger.info(f"Device with Serial Number {Versa_CPE.serial_number} is completed, will stop script for 10 minutes.")
+                                logger.info(f"Device with Serial Number {Versa_CPE.serial_number} is completed, will stop script for 10 minutes, then shutdown device.")
                                 with open(f"/home/solar/versa_upgrade/completed_devices/{Versa_CPE.serial_number}.txt", "w") as f:
                                     f.write(f"Start of file\n {Versa_CPE.serial_number} \n {Versa_CPE.vsh_details} \n {Versa_CPE.vsh_status} \n {Versa_CPE.show_interfaces}\n end of file\n")
+                                time.sleep(600)                               
                                 if not versa_login.shutdown():
-                                    logger.error(f"Unable to shutdown device.")
+                                    logger.error(f"Unable to shutdown device, will wait 2 minutes.")
+                                    time.sleep(120)  
                                 else:
-                                    logger.info(f"Device is shutting down.")
+                                    logger.info(f"Device is shutting down, will wait 2 minutes.")
+                                    time.sleep(120)  
                                 device_completed = True
-                                time.sleep(600)
+
                             else:
                                 logger.error(f"No WAN interface with the WAN1-Transport-VR VRF, will try again after 2 minutes.")
                                 time.sleep(120)
