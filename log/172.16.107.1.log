@@ -58,3 +58,15 @@ SSH timed out. Here is what SSH said:
 b''
 <class 'pexpect.exceptions.TIMEOUT'>
 Unable to login, will try again in one minute.
+Started DIE function
+ERROR!
+SSH timed out. Here is what SSH said:
+b''
+<class 'pexpect.exceptions.TIMEOUT'>
+Unable to login, will try again in one minute.
+Started DIE function
+ERROR!
+SSH timed out. Here is what SSH said:
+b''
+<class 'pexpect.exceptions.TIMEOUT'>
+Unable to login, will try again in one minute.
