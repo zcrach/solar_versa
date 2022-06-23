@@ -101,6 +101,6 @@ vni-0/3      ac:43:30:00:be:d0  down   up     -       -
 vni-0/3.0    ac:43:30:00:be:d0  down   up     1       global                     192.168.2.1/24  
 vni-0/4      ac:43:30:00:be:d1  down   down   -       -                                          
 
-[ok][2022-06-23 19:32:25]
+[ok][2022-06-23 19:42:04]
 admin@versa-flexvnf-
  end of file
