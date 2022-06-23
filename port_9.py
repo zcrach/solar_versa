@@ -1,6 +1,7 @@
 import logging, pexpect, time, re, sys, subprocess, os
 from versa_variables import *
-global device_completed, hosts_path, timestr
+global device_completed, hosts_path, run_number, port_number
+
 
 
 
@@ -17,18 +18,23 @@ global device_completed, hosts_path, timestr
 #################################### DONT TOUCH ####################################
 ####################################################################################
 
+port_number = 9
+
 device_completed = False
-hostname = "172.16.109.1"
+hostname = f"172.16.10{port_number}.1"
 username = "admin"
 password = "versa123"
 prompt = "\$"
+run_number = 0
 
-logger = logging.getLogger('port_9_logger')
+logger = logging.getLogger(f'port_{port_number}_logger')
 logger.setLevel(logging.DEBUG)
 level = logging.DEBUG
 fh = logging.FileHandler(f"/home/solar/versa_upgrade/log/{hostname}.log")
 fh.setLevel(logging.DEBUG)
-fmt = '[%(levelname)s] %(asctime)s - %(message)s'
+formatter = logging.Formatter('[%(levelname)s] [%(asctime)s]: %(message)s ')
+fh.setFormatter(formatter)
+fmt = '[%(levelname)s] [%(asctime)s]: %(message)s '
 logging.basicConfig(level=level, format=fmt)
 logger.addHandler(fh)
 
@@ -84,14 +90,28 @@ class VersaConnect:
         except:
             return False
 
+    def shutdown(self):
+        try:
+            ch = pexpect.spawn(f'ssh {username}@{hostname}', timeout=30, maxread=65535)
+            ch.logfile = sys.stdout.buffer
+            ch.expect(['assword:', pexpect.EOF, pexpect.TIMEOUT])
+            VersaConnect.send_and_expect(self, ch, password, prompt)
+            VersaConnect.send_and_expect(self, ch, "cli", "cli>")
+            VersaConnect.send_and_expect(self, ch, f"request system shutdown", "[no,yes]")
+            shutdown_log = VersaConnect.send_and_expect(self, ch, "yes", "cli>")
+            logger.error(shutdown_log)
+            return True
+        except:
+            return False
+
     def login(self):
         ch = pexpect.spawn(f'ssh {username}@{hostname}', timeout=30, maxread=65535)
         session_callback = ch.expect([pexpect.TIMEOUT, pexpect.EOF, 'yes/no', 'assword:', 'Connection refused', prompt] )
         if session_callback == 0:
-            VersaConnect.die(self, ch, 'ERROR!\nSSH timed out. Here is what SSH said:' )
+            VersaConnect.die(self, ch, 'ERROR! SSH timed out. Here is what SSH said:' )
             return False
         elif session_callback == 1:
-            VersaConnect.die(self, ch, 'ERROR!\nSSH had an EOF error, here is what it said:' )
+            VersaConnect.die(self, ch, 'ERROR! SSH had an EOF error, here is what it said:' )
             return False
         elif session_callback == 2:
             VersaConnect.send_and_expect(self, ch, 'yes', 'assword:')
@@ -131,13 +151,11 @@ class VersaConnect:
         except:
             return False
 
+
     def die(self, child, errstr):
-        logger.error("Started DIE function")
-        #logger.error(child)
-        with open("port_1.output", 'a') as f:
-            logger.error(errstr)
-            logger.info(child.before)
-            logger.info(child.after)
+        logger.error(errstr)
+        logger.info(child.before)
+        logger.info(child.after)
         child.terminate()
 
 
@@ -151,6 +169,9 @@ def main():
 
     try:
         while True:
+            global run_number
+            run_number += 1
+            logger.info(f"__________[[Currently on run number: {run_number}]]__________")
             versa_login = VersaConnect(hostname, username, password)
             if not versa_login.login():
                 logger.info("Unable to login, will try again in one minute.")
@@ -164,7 +185,6 @@ def main():
                         logger.info("Some services have stopped, will try again in 2 minutes.")
                         time.sleep(120)
                     elif "Running" in Versa_CPE.vsh_status:
-                        print("started running")
                         logger.info("All services are running")
                         if all(k in image_filename for k in (Versa_CPE.release, Versa_CPE.package_id, Versa_CPE.release_date)):
                             logger.info(f"Device has the correct Version {Versa_CPE.release}")
@@ -173,6 +193,10 @@ def main():
                                 logger.info(f"Device with Serial Number {Versa_CPE.serial_number} is completed, will stop script for 10 minutes.")
                                 with open(f"/home/solar/versa_upgrade/completed_devices/{Versa_CPE.serial_number}.txt", "w") as f:
                                     f.write(f"Start of file\n {Versa_CPE.serial_number} \n {Versa_CPE.vsh_details} \n {Versa_CPE.vsh_status} \n {Versa_CPE.show_interfaces}\n end of file\n")
+                                if not versa_login.shutdown():
+                                    logger.error(f"Unable to shutdown device.")
+                                else:
+                                    logger.info(f"Device is shutting down.")
                                 device_completed = True
                                 time.sleep(600)
                             else:

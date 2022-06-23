@@ -1,5 +1,21 @@
-Variables failed on Versa_CPE
-All services are running
-Device has the correct Version 21.1.4
-Device has WAN interface in correct VRF.
-Device with Serial Number JAB20165269 is completed, will stop script for 10 minutes.
+[INFO] [2022-06-23 22:47:44,694]: __________[[Currently on run number: 1]]__________ 
+[INFO] [2022-06-23 22:47:44,694]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
+[ERROR] [2022-06-23 22:48:14,722]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 22:48:14,724]: b'' 
+[INFO] [2022-06-23 22:48:14,725]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 22:48:15,527]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 22:49:16,200]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 22:50:37,071]: All services are running 
+[INFO] [2022-06-23 22:50:37,072]: Device has the correct Version 21.1.4 
+[ERROR] [2022-06-23 22:50:37,072]: No WAN interface with the WAN1-Transport-VR VRF, will try again after 2 minutes. 
+[INFO] [2022-06-23 22:52:42,035]: __________[[Currently on run number: 1]]__________ 
+[INFO] [2022-06-23 22:52:44,349]: Variables failed on Versa_CPE 
+[INFO] [2022-06-23 22:52:44,352]: __________[[Currently on run number: 2]]__________ 
+[INFO] [2022-06-23 22:52:59,815]: All services are running 
+[INFO] [2022-06-23 22:52:59,815]: Device has the correct Version 21.1.4 
+[INFO] [2022-06-23 22:52:59,816]: Device has WAN interface in correct VRF. 
+[INFO] [2022-06-23 22:52:59,816]: Device with Serial Number JAB20165269 is completed, will stop script for 10 minutes. 
+[ERROR] [2022-06-23 22:53:30,670]: quest system shutdown
+Will shutdown the system. Are you sure? [no,yes] yes
+ 
+[INFO] [2022-06-23 22:53:31,171]: Device is shutting down. 

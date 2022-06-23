@@ -15,7 +15,7 @@ Software Details			 Hardware Details
   Branch	      21.1.4		   Memory	       7.63GiB
   Creator	      versa		   Disk size	       59G
 					   Free NICs	       0
- Security Package Details		   Free memory	       4.25GiB
+ Security Package Details		   Free memory	       4.19GiB
    Version	       1936		   Free disk	       51G
    API Version	       11		   SSD present	       yes
    Flavor	       sample		   uCPE Platform       no
@@ -28,43 +28,43 @@ Software Details			 Hardware Details
 					
  Load statistics			
    CPU Load	       2		
-   Memory Load	       7		
+   Memory Load	       8		
    Load Factor	       2		
 [admin@versa-flexvnf: ~]  
   
 tput: unknown terminal "unknown"
-versa-service          is Running,          [*] process 4371
-versa-infmgr           is Running,          [-] process 2780
-versa-rfd              is Running,          [-] process 3250
-versa-vmod             is Running,          [-] process 3814
-versa-ip2user          is Running,          [-] process 3259
-versa-imgr             is Running,          [-] process 3261
-versa-acctmgrd         is Running,          [-] process 3242
-versa-fltrmgr          is Running,          [-] process 2785
-versa-vstated          is Running,          [-] process 2781
-versa-addrmgrd         is Running,          [-] process 3260
-versa-rt-cli-xfm       is Running,          [-] process 3214
-versa-rtd              is Running,          [-] process 3867
-versa-dhcpd            is Running,          [-] process 2883
-versa-eventd           is Running,          [-] process 3246
-versa-vrrpd            is Running,          [-] process 2786
-versa-dnsd             is Running,          [-] process 2874
-versa-ppmd             is Running,          [-] process 3211
-versa-snmp-xform       is Running,          [-] process 3219
-versa-certd            is Running,          [-] process 3586
-versa-ntpd             is Running,          [*] process 2860
-versa-dhclient6        is Running,          [-] process 3221
-versa-redis            is Running,          [-] process 4403
-versa-av-redis         is Running,          [-] process 2078
-versa-spackmgr         is Running,          [-] process 3234
-versa-l2ld             is Running,          [-] process 2782
-versa-l2cd             is Running,          [-] process 3474
-versa-devmgr           is Running,          [-] process 3447
-versa-monit            is Running,          [*] process 3503
-versa-confd            is Running,          [*] process 2027
-versa-fail2ban         is Running,          [*] process 3810
-versa-auditd           is Running,          [*] process 1688
-versa-nodejs           is Running,          [-] process 3106
+versa-service          is Running,          [*] process 4472
+versa-infmgr           is Running,          [-] process 2921
+versa-rfd              is Running,          [-] process 3382
+versa-vmod             is Running,          [-] process 3980
+versa-ip2user          is Running,          [-] process 3384
+versa-imgr             is Running,          [-] process 3387
+versa-acctmgrd         is Running,          [-] process 3380
+versa-fltrmgr          is Running,          [-] process 2927
+versa-vstated          is Running,          [-] process 2919
+versa-addrmgrd         is Running,          [-] process 3385
+versa-rt-cli-xfm       is Running,          [-] process 3354
+versa-rtd              is Running,          [-] process 4005
+versa-dhcpd            is Running,          [-] process 3023
+versa-eventd           is Running,          [-] process 3390
+versa-vrrpd            is Running,          [-] process 2928
+versa-dnsd             is Running,          [-] process 3013
+versa-ppmd             is Running,          [-] process 3352
+versa-snmp-xform       is Running,          [-] process 3363
+versa-certd            is Running,          [-] process 3714
+versa-ntpd             is Running,          [*] process 3000
+versa-dhclient6        is Running,          [-] process 3365
+versa-redis            is Running,          [-] process 4544
+versa-av-redis         is Running,          [-] process 2219
+versa-spackmgr         is Running,          [-] process 3377
+versa-l2ld             is Running,          [-] process 2925
+versa-l2cd             is Running,          [-] process 3616
+versa-devmgr           is Running,          [-] process 3573
+versa-monit            is Running,          [*] process 3654
+versa-confd            is Running,          [*] process 2120
+versa-fail2ban         is Running,          [*] process 3792
+versa-auditd           is Running,          [*] process 1735
+versa-nodejs           is Running,          [-] process 3331
 [admin@versa-flexvnf: ~]  
   show interfaces brief | tab | nomore
 NAME         MAC                OPER   ADMIN  TENANT  VRF                        IP              
@@ -74,6 +74,7 @@ tvi-0/0      n/a                up     up     -       -
 tvi-0/0.0    n/a                pdown  up     1       Versa-Provider-Control-VR                  
 tvi-0/1      n/a                up     up     -       -                                          
 tvi-0/1.0    n/a                pdown  up     1       Versa-Provider-Control-VR                  
+unknown-0/0  n/a                down   down   -       -                                          
 vni-0/0      ac:43:30:00:97:c5  down   up     -       -                                          
 vni-0/0.1    ac:43:30:00:97:c5  down   up     1       WAN1-Transport-VR                          
 vni-0/0.0    ac:43:30:00:97:c5  down   up     1       WAN1-Transport-VR                          
@@ -88,17 +89,15 @@ vni-0/102    02:aa:bb:cc:dd:03  down   down   -       -
 vni-0/103    02:aa:bb:cc:dd:04  down   down   -       -                                          
 vni-0/2      ac:43:30:00:97:c3  down   up     -       -                                          
 vni-0/2.0    ac:43:30:00:97:c3  down   up     1       global                     192.168.1.1/24  
-vni-0/200    ae:40:30:5b:f7:ce  up     up     -       -                                          
-vni-0/200.0  ae:40:30:5b:f7:ce  up     up     1       global                     192.168.0.1/24  
-vni-0/201    7e:6e:78:0a:9b:4f  down   down   -       -                                          
-vni-0/202    6a:a9:ea:cc:e9:f8  down   down   -       -                                          
-vni-0/203    26:df:11:a3:1c:b9  down   down   -       -                                          
-vni-0/204    22:34:ac:8b:63:08  down   down   -       -                                          
-vni-0/205    e6:8e:c8:fd:37:25  down   down   -       -                                          
-vni-0/206    b2:38:f9:78:0b:c6  down   down   -       -                                          
-vni-0/207    c6:e1:be:cc:4e:b9  down   down   -       -                                          
-vni-0/3      ac:43:30:00:97:c4  down   up     -       -                                          
-vni-0/3.0    ac:43:30:00:97:c4  down   up     1       global                     192.168.2.1/24  
+vni-0/200    7e:97:a8:b1:44:6d  up     up     -       -                                          
+vni-0/200.0  7e:97:a8:b1:44:6d  up     up     1       global                     192.168.0.1/24  
+vni-0/201    9a:3f:75:14:a9:4a  down   down   -       -                                          
+vni-0/202    9e:d7:1c:6f:a0:3a  down   down   -       -                                          
+vni-0/203    ee:60:f0:73:57:4d  down   down   -       -                                          
+vni-0/204    b2:c0:f6:f3:6b:d8  down   down   -       -                                          
+vni-0/205    7a:17:57:f2:e0:67  down   down   -       -                                          
+vni-0/206    72:19:f4:14:9e:22  down   down   -       -                                          
+vni-0/207    62:44:71:e5:4d:c5  down   down   -       -                                          
 vni-0/4      ac:43:30:00:97:bd  down   up     -       -                                          
 vni-0/4.1    ac:43:30:00:97:bd  down   up     1       WAN1-Transport-VR                          
 vni-0/4.0    ac:43:30:00:97:bd  down   up     1       WAN1-Transport-VR                          
@@ -107,6 +106,6 @@ vni-0/7      ac:43:30:00:97:c0  down   down   -       -
 vni-0/8      ac:43:30:00:97:c1  down   down   -       -                                          
 vni-0/9      ac:43:30:00:97:c2  down   down   -       -                                          
 
-[ok][2022-06-23 12:32:34]
+[ok][2022-06-23 13:50:47]
 admin@versa-flexvnf-
  end of file

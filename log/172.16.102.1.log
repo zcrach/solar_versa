@@ -1,5 +1,23 @@
-Variables failed on Versa_CPE
-All services are running
-Device has the correct Version 21.1.4
-Device has WAN interface in correct VRF.
-Device with Serial Number JAB20054512 is completed, will stop script for 10 minutes.
+[INFO] [2022-06-23 22:47:44,909]: __________[[Currently on run number: 1]]__________ 
+[INFO] [2022-06-23 22:47:44,909]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
+[ERROR] [2022-06-23 22:48:14,942]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 22:48:14,943]: b'' 
+[INFO] [2022-06-23 22:48:14,943]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 22:48:15,746]: Unable to login, will try again in one minute. 
+[ERROR] [2022-06-23 22:49:17,188]: ERROR! Unable to get any readable output from vsh details/status: 
+[INFO] [2022-06-23 22:49:17,188]: b' vsh details\r\nFailed to connect to server\r\nFailed to connect to server\r\ncat: /tmp/ssdpart0[3-5]: No such file or directory\r\ncat: /tmp/ssdpart02: No such file or directory\r\nFailed to connect to server\r\n\t\t\t\t\t\r\nSoftware Details\t\t\t---------------------------------------\r\n[admin@versa-flexvnf: ~] ' 
+[INFO] [2022-06-23 22:49:17,189]: b'$' 
+[INFO] [2022-06-23 22:49:17,991]: Variables failed on Versa_CPE 
+[ERROR] [2022-06-23 22:49:18,447]: ERROR! Unable to get any readable output from vsh details/status: 
+[INFO] [2022-06-23 22:49:18,448]: b' vsh details\r\nFailed to connect to server\r\nFailed to connect to server\r\ncat: /tmp/ssdpart0[3-5]: No such file or directory\r\ncat: /tmp/ssdpart02: No such file or directory\r\nFailed to connect to server\r\n\t\t\t\t\t\r\nSoftware Details\t\t\t---------------------------------------\r\n[admin@versa-flexvnf: ~] ' 
+[INFO] [2022-06-23 22:49:18,449]: b'$' 
+[INFO] [2022-06-23 22:49:19,251]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 22:50:38,110]: All services are running 
+[INFO] [2022-06-23 22:50:38,111]: Device has the correct Version 21.1.4 
+[INFO] [2022-06-23 22:50:38,111]: Device has WAN interface in correct VRF. 
+[INFO] [2022-06-23 22:50:38,111]: Device with Serial Number JAB20054512 is completed, will stop script for 10 minutes. 
+[INFO] [2022-06-23 22:52:42,253]: __________[[Currently on run number: 1]]__________ 
+[ERROR] [2022-06-23 22:53:12,289]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 22:53:12,292]: b'' 
+[INFO] [2022-06-23 22:53:12,292]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 22:53:13,095]: Unable to login, will try again in one minute. 

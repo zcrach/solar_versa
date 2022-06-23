@@ -1,7 +1,16 @@
-Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts
-Started DIE function
-ERROR!
-SSH timed out. Here is what SSH said:
-b''
-<class 'pexpect.exceptions.TIMEOUT'>
-Unable to login, will try again in one minute.
+[INFO] [2022-06-23 22:47:45,547]: __________[[Currently on run number: 1]]__________ 
+[INFO] [2022-06-23 22:47:45,547]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
+[ERROR] [2022-06-23 22:48:15,580]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 22:48:15,583]: b'' 
+[INFO] [2022-06-23 22:48:15,583]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 22:48:16,386]: Unable to login, will try again in one minute. 
+[ERROR] [2022-06-23 22:49:46,457]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 22:49:46,457]: b'' 
+[INFO] [2022-06-23 22:49:46,457]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 22:49:47,259]: Unable to login, will try again in one minute. 
+[INFO] [2022-06-23 22:52:42,884]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
+[INFO] [2022-06-23 22:52:42,884]: __________[[Currently on run number: 1]]__________ 
+[ERROR] [2022-06-23 22:53:12,904]: ERROR! SSH timed out. Here is what SSH said: 
+[INFO] [2022-06-23 22:53:12,905]: b'' 
+[INFO] [2022-06-23 22:53:12,905]: <class 'pexpect.exceptions.TIMEOUT'> 
+[INFO] [2022-06-23 22:53:13,707]: Unable to login, will try again in one minute. 
