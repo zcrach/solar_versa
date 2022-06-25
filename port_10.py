@@ -114,6 +114,11 @@ def versa_upload():
     except:
         return False
 
+def versa_hosts_file():
+    try:
+        os.remove(hosts_path)
+    except:
+        logging.info(f"No file in {hosts_path} to remove")
 
 def versa_shutdown():
     try:
@@ -132,36 +137,45 @@ def versa_shutdown():
 
 def main():
     logging_function(port_number)
+
+    
     try:
         while True:
+
             if not versa_ping():
                 logger.info("Ping check failed")
             else:
                 logger.info("Ping: Successful")
                 if not versa_login():
                     logger.info("Login failed, will try again in 30 seconds.")
+                    versa_hosts_file()
                     time.sleep(30)
                 else:
                     logger.info("Login: Successful")
                     try: 
                         if "Stopped" in versa_status:
                             logger.info("Some services have stopped, will try again in 2 minutes.")
+                            time.sleep(120)
                         elif "Running" in versa_status:
                             logger.info("All services are running")
                             if versa_release in image_filename:
                                 logger.info(f"SERIAL NUMBER: {versa_sn}")
                                 logger.info(f"{versa_sn} has the right version: {versa_release}")
+                                time.sleep(30)
                                 if "WAN1-Transport-VR" in versa_interfaces:
                                     logger.info(f"Device has WAN interface in correct VRF.")
-                                    logger.info(f"Will stop script for 2 minutes, then shutdown device.")
+                                    logger.info(f"Will stop script for 1 minutes, then shutdown device.")
+                                    time.sleep(60)
                                     if not versa_shutdown():
-                                        logger.error(f"Unable to shutdown device, will wait 2 minutes.")
+                                        logger.error(f"Unable to shutdown device, will wait 1 minutes.")
+                                        time.sleep(60)
                                     else:
                                         logger.info(f"COMPLETED {versa_sn} COMPLETED")
                                         logger.info(f"Device is shutting down, will wait 2 minutes.")
                                         with open(f"/home/solar/versa_upgrade/completed_devices/{versa_sn}.log", "w") as f:
                                             f.write(f"Start of file\n {versa_sn} \n {versa_details} \n {versa_status} \n {versa_interfaces}\n end of file\n")
                                             logger.info(f"Created file: completed_devices/{versa_sn}.log")
+                                        time.sleep(120)
                                 else:
                                     logger.info(f"Device does not have WAN interface in correct VRF.")
                                     time.sleep(10)
@@ -171,6 +185,7 @@ def main():
                                     logger.info(f"{versa_sn} has {image_filename} in /home/versa/packages")
                                     if not versa_upgrade():
                                         logger.info(f"{versa_sn} Failed to upgrade device with {image_filename}.")
+                                        time.sleep(30)
                                     else:
                                         logger.info(f"{versa_sn} Successfully started upgrade of device with {image_filename}.")
                                         logger.info(f"{versa_sn} Waiting 5 minutes for the device to complete upgrade.")
@@ -179,17 +194,24 @@ def main():
                                     logger.info(f"{versa_sn} is missing {image_filename}, starting upload")
                                     if not versa_upload():
                                         logger.info(f"{versa_sn} Failed to upload {image_filename} to /home/versa/packages")
+                                        time.sleep(30)
                                     else:
                                         logger.info(f"{versa_sn} Successfully uploaded {image_filename} to /home/versa/packages")
+                                        time.sleep(10)
                                         if not versa_upgrade():
                                             logger.info(f"{versa_sn} Failed to upgrade device with {image_filename}.")
+                                            time.sleep(10)
                                         else:
-                                            logger.info(f"{versa_sn} Successfully upgraded device with {image_filename}.")
+                                            logger.info(f"{versa_sn} Successfully started upgrade of device with {image_filename}.")
+                                            logger.info(f"{versa_sn} Waiting 5 minutes for the device to complete upgrade.")
+                                            time.sleep(300)
                         else:
-                            logger.info("Status is not stopped or running")   
+                            logger.info("Status is not stopped or running")  
+                            time.sleep(10) 
 
                     except:
                         logger.info("Lost connection when getting variables")
+                        time.sleep(10)
     except KeyboardInterrupt:
         logger.warning(f"Session has been stopped with Ctrl+C.")
 if __name__ == '__main__':

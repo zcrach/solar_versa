@@ -53,3 +53,251 @@ Will shutdown the system. Are you sure? [no,yes] yes
 [INFO] [2022-06-25 19:04:18,504]: COMPLETED JAB20054512 COMPLETED 
 [INFO] [2022-06-25 19:04:18,505]: Device is shutting down, will wait 2 minutes. 
 [INFO] [2022-06-25 19:04:18,506]: Created file: completed_devices/JAB20054512.log 
+[INFO] [2022-06-25 19:13:09,490]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
+[INFO] [2022-06-25 19:15:54,211]: Ping: Successful 
+[INFO] [2022-06-25 19:15:55,217]: Login: Successful 
+[INFO] [2022-06-25 19:15:55,219]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:15:55,222]: Ping: Successful 
+[INFO] [2022-06-25 19:15:56,215]: Login: Successful 
+[INFO] [2022-06-25 19:15:56,216]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:15:56,219]: Ping: Successful 
+[INFO] [2022-06-25 19:15:56,219]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
+[INFO] [2022-06-25 19:15:57,230]: Login: Successful 
+[INFO] [2022-06-25 19:15:57,232]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:15:57,237]: Ping: Successful 
+[INFO] [2022-06-25 19:15:58,206]: Login: Successful 
+[INFO] [2022-06-25 19:15:58,207]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:15:58,210]: Ping: Successful 
+[INFO] [2022-06-25 19:15:59,195]: Login: Successful 
+[INFO] [2022-06-25 19:15:59,196]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:15:59,199]: Ping: Successful 
+[INFO] [2022-06-25 19:16:00,169]: Login: Successful 
+[INFO] [2022-06-25 19:16:00,169]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:00,173]: Ping: Successful 
+[INFO] [2022-06-25 19:16:01,140]: Login: Successful 
+[INFO] [2022-06-25 19:16:01,141]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:01,145]: Ping: Successful 
+[INFO] [2022-06-25 19:16:01,145]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
+[INFO] [2022-06-25 19:16:02,135]: Login: Successful 
+[INFO] [2022-06-25 19:16:02,136]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:02,138]: Ping: Successful 
+[INFO] [2022-06-25 19:16:03,110]: Login: Successful 
+[INFO] [2022-06-25 19:16:03,111]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:03,114]: Ping: Successful 
+[INFO] [2022-06-25 19:16:04,102]: Login: Successful 
+[INFO] [2022-06-25 19:16:04,103]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:04,107]: Ping: Successful 
+[INFO] [2022-06-25 19:16:05,087]: Login: Successful 
+[INFO] [2022-06-25 19:16:05,087]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:05,092]: Ping: Successful 
+[INFO] [2022-06-25 19:16:06,083]: Login: Successful 
+[INFO] [2022-06-25 19:16:06,084]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:06,086]: Ping: Successful 
+[INFO] [2022-06-25 19:16:07,061]: Login: Successful 
+[INFO] [2022-06-25 19:16:07,062]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:07,066]: Ping: Successful 
+[INFO] [2022-06-25 19:16:08,051]: Login: Successful 
+[INFO] [2022-06-25 19:16:08,052]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:08,055]: Ping: Successful 
+[INFO] [2022-06-25 19:16:09,047]: Login: Successful 
+[INFO] [2022-06-25 19:16:09,048]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:09,052]: Ping: Successful 
+[INFO] [2022-06-25 19:16:10,040]: Login: Successful 
+[INFO] [2022-06-25 19:16:10,040]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:10,043]: Ping: Successful 
+[INFO] [2022-06-25 19:16:11,028]: Login: Successful 
+[INFO] [2022-06-25 19:16:11,028]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:11,031]: Ping: Successful 
+[INFO] [2022-06-25 19:16:12,015]: Login: Successful 
+[INFO] [2022-06-25 19:16:12,015]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:12,018]: Ping: Successful 
+[INFO] [2022-06-25 19:16:13,005]: Login: Successful 
+[INFO] [2022-06-25 19:16:13,005]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:13,009]: Ping: Successful 
+[INFO] [2022-06-25 19:16:14,003]: Login: Successful 
+[INFO] [2022-06-25 19:16:14,004]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:14,008]: Ping: Successful 
+[INFO] [2022-06-25 19:16:14,990]: Login: Successful 
+[INFO] [2022-06-25 19:16:14,991]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:14,996]: Ping: Successful 
+[INFO] [2022-06-25 19:16:15,976]: Login: Successful 
+[INFO] [2022-06-25 19:16:15,977]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:15,982]: Ping: Successful 
+[INFO] [2022-06-25 19:16:16,967]: Login: Successful 
+[INFO] [2022-06-25 19:16:16,968]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:16,971]: Ping: Successful 
+[INFO] [2022-06-25 19:16:17,950]: Login: Successful 
+[INFO] [2022-06-25 19:16:17,950]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:17,953]: Ping: Successful 
+[INFO] [2022-06-25 19:16:18,924]: Login: Successful 
+[INFO] [2022-06-25 19:16:18,925]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:18,928]: Ping: Successful 
+[INFO] [2022-06-25 19:16:18,929]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
+[INFO] [2022-06-25 19:16:19,908]: Login: Successful 
+[INFO] [2022-06-25 19:16:19,909]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:19,914]: Ping: Successful 
+[INFO] [2022-06-25 19:16:20,896]: Login: Successful 
+[INFO] [2022-06-25 19:16:20,897]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:20,902]: Ping: Successful 
+[INFO] [2022-06-25 19:16:21,875]: Login: Successful 
+[INFO] [2022-06-25 19:16:21,875]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:21,878]: Ping: Successful 
+[INFO] [2022-06-25 19:16:22,858]: Login: Successful 
+[INFO] [2022-06-25 19:16:22,859]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:22,862]: Ping: Successful 
+[INFO] [2022-06-25 19:16:23,835]: Login: Successful 
+[INFO] [2022-06-25 19:16:23,836]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:23,840]: Ping: Successful 
+[INFO] [2022-06-25 19:16:24,833]: Login: Successful 
+[INFO] [2022-06-25 19:16:24,833]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:24,836]: Ping: Successful 
+[INFO] [2022-06-25 19:16:25,805]: Login: Successful 
+[INFO] [2022-06-25 19:16:25,806]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:25,811]: Ping: Successful 
+[INFO] [2022-06-25 19:16:26,793]: Login: Successful 
+[INFO] [2022-06-25 19:16:26,793]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:26,798]: Ping: Successful 
+[INFO] [2022-06-25 19:16:27,773]: Login: Successful 
+[INFO] [2022-06-25 19:16:27,773]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:27,777]: Ping: Successful 
+[INFO] [2022-06-25 19:16:28,750]: Login: Successful 
+[INFO] [2022-06-25 19:16:28,751]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:28,754]: Ping: Successful 
+[INFO] [2022-06-25 19:16:29,743]: Login: Successful 
+[INFO] [2022-06-25 19:16:29,744]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:29,747]: Ping: Successful 
+[INFO] [2022-06-25 19:16:30,715]: Login: Successful 
+[INFO] [2022-06-25 19:16:30,716]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:30,720]: Ping: Successful 
+[INFO] [2022-06-25 19:16:31,700]: Login: Successful 
+[INFO] [2022-06-25 19:16:31,700]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:31,703]: Ping: Successful 
+[INFO] [2022-06-25 19:16:31,704]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
+[INFO] [2022-06-25 19:16:32,677]: Login: Successful 
+[INFO] [2022-06-25 19:16:32,677]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:32,680]: Ping: Successful 
+[INFO] [2022-06-25 19:16:33,658]: Login: Successful 
+[INFO] [2022-06-25 19:16:33,659]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:33,662]: Ping: Successful 
+[INFO] [2022-06-25 19:16:34,639]: Login: Successful 
+[INFO] [2022-06-25 19:16:34,640]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:34,644]: Ping: Successful 
+[INFO] [2022-06-25 19:16:35,625]: Login: Successful 
+[INFO] [2022-06-25 19:16:35,626]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:35,630]: Ping: Successful 
+[INFO] [2022-06-25 19:16:36,611]: Login: Successful 
+[INFO] [2022-06-25 19:16:36,612]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:36,616]: Ping: Successful 
+[INFO] [2022-06-25 19:16:37,590]: Login: Successful 
+[INFO] [2022-06-25 19:16:37,591]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:37,596]: Ping: Successful 
+[INFO] [2022-06-25 19:16:38,569]: Login: Successful 
+[INFO] [2022-06-25 19:16:38,570]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:38,573]: Ping: Successful 
+[INFO] [2022-06-25 19:16:39,543]: Login: Successful 
+[INFO] [2022-06-25 19:16:39,543]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:39,546]: Ping: Successful 
+[INFO] [2022-06-25 19:16:40,518]: Login: Successful 
+[INFO] [2022-06-25 19:16:40,518]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:40,522]: Ping: Successful 
+[INFO] [2022-06-25 19:16:41,497]: Login: Successful 
+[INFO] [2022-06-25 19:16:41,498]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:41,502]: Ping: Successful 
+[INFO] [2022-06-25 19:16:42,484]: Login: Successful 
+[INFO] [2022-06-25 19:16:42,485]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:42,487]: Ping: Successful 
+[INFO] [2022-06-25 19:16:43,449]: Login: Successful 
+[INFO] [2022-06-25 19:16:43,450]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:43,454]: Ping: Successful 
+[INFO] [2022-06-25 19:16:43,454]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
+[INFO] [2022-06-25 19:16:44,433]: Login: Successful 
+[INFO] [2022-06-25 19:16:44,434]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:44,436]: Ping: Successful 
+[INFO] [2022-06-25 19:16:45,412]: Login: Successful 
+[INFO] [2022-06-25 19:16:45,412]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:45,416]: Ping: Successful 
+[INFO] [2022-06-25 19:16:46,389]: Login: Successful 
+[INFO] [2022-06-25 19:16:46,390]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:46,394]: Ping: Successful 
+[INFO] [2022-06-25 19:16:47,361]: Login: Successful 
+[INFO] [2022-06-25 19:16:47,361]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:47,365]: Ping: Successful 
+[INFO] [2022-06-25 19:16:48,339]: Login: Successful 
+[INFO] [2022-06-25 19:16:48,339]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:48,343]: Ping: Successful 
+[INFO] [2022-06-25 19:16:49,318]: Login: Successful 
+[INFO] [2022-06-25 19:16:49,318]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:49,323]: Ping: Successful 
+[INFO] [2022-06-25 19:16:49,323]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 
+[INFO] [2022-06-25 19:16:50,315]: Login: Successful 
+[INFO] [2022-06-25 19:16:50,316]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:50,319]: Ping: Successful 
+[INFO] [2022-06-25 19:16:51,300]: Login: Successful 
+[INFO] [2022-06-25 19:16:51,300]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:51,304]: Ping: Successful 
+[INFO] [2022-06-25 19:16:52,278]: Login: Successful 
+[INFO] [2022-06-25 19:16:52,279]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:52,282]: Ping: Successful 
+[INFO] [2022-06-25 19:16:53,263]: Login: Successful 
+[INFO] [2022-06-25 19:16:53,264]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:53,266]: Ping: Successful 
+[INFO] [2022-06-25 19:16:54,246]: Login: Successful 
+[INFO] [2022-06-25 19:16:54,247]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:54,252]: Ping: Successful 
+[INFO] [2022-06-25 19:16:55,226]: Login: Successful 
+[INFO] [2022-06-25 19:16:55,226]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:55,230]: Ping: Successful 
+[INFO] [2022-06-25 19:16:56,194]: Login: Successful 
+[INFO] [2022-06-25 19:16:56,195]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:56,201]: Ping: Successful 
+[INFO] [2022-06-25 19:16:57,181]: Login: Successful 
+[INFO] [2022-06-25 19:16:57,182]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:57,186]: Ping: Successful 
+[INFO] [2022-06-25 19:16:58,151]: Login: Successful 
+[INFO] [2022-06-25 19:16:58,152]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:58,157]: Ping: Successful 
+[INFO] [2022-06-25 19:16:59,136]: Login: Successful 
+[INFO] [2022-06-25 19:16:59,137]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:16:59,142]: Ping: Successful 
+[INFO] [2022-06-25 19:17:00,126]: Login: Successful 
+[INFO] [2022-06-25 19:17:00,127]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:00,130]: Ping: Successful 
+[INFO] [2022-06-25 19:17:01,119]: Login: Successful 
+[INFO] [2022-06-25 19:17:01,120]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:01,123]: Ping: Successful 
+[INFO] [2022-06-25 19:17:02,101]: Login: Successful 
+[INFO] [2022-06-25 19:17:02,102]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:02,105]: Ping: Successful 
+[INFO] [2022-06-25 19:17:03,075]: Login: Successful 
+[INFO] [2022-06-25 19:17:03,076]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:03,080]: Ping: Successful 
+[INFO] [2022-06-25 19:17:04,049]: Login: Successful 
+[INFO] [2022-06-25 19:17:04,050]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:04,053]: Ping: Successful 
+[INFO] [2022-06-25 19:17:05,034]: Login: Successful 
+[INFO] [2022-06-25 19:17:05,034]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:05,037]: Ping: Successful 
+[INFO] [2022-06-25 19:17:06,011]: Login: Successful 
+[INFO] [2022-06-25 19:17:06,012]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:06,015]: Ping: Successful 
+[INFO] [2022-06-25 19:17:07,002]: Login: Successful 
+[INFO] [2022-06-25 19:17:07,003]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:07,006]: Ping: Successful 
+[INFO] [2022-06-25 19:17:07,980]: Login: Successful 
+[INFO] [2022-06-25 19:17:07,980]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:07,984]: Ping: Successful 
+[INFO] [2022-06-25 19:17:08,977]: Login: Successful 
+[INFO] [2022-06-25 19:17:08,977]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:08,981]: Ping: Successful 
+[INFO] [2022-06-25 19:17:09,961]: Login: Successful 
+[INFO] [2022-06-25 19:17:09,961]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:09,967]: Ping: Successful 
+[INFO] [2022-06-25 19:17:10,954]: Login: Successful 
+[INFO] [2022-06-25 19:17:10,955]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:10,961]: Ping: Successful 
+[INFO] [2022-06-25 19:17:11,936]: Login: Successful 
+[INFO] [2022-06-25 19:17:11,937]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:11,942]: Ping: Successful 
+[INFO] [2022-06-25 19:17:12,918]: Login: Successful 
+[INFO] [2022-06-25 19:17:12,919]: Lost connection when getting variables 
+[INFO] [2022-06-25 19:17:12,922]: Ping: Successful 
