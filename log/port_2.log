@@ -32,3 +32,24 @@ Will shutdown the system. Are you sure? [no,yes] yes
 [INFO] [2022-06-25 18:55:52,711]: COMPLETED JAB20054512 COMPLETED 
 [INFO] [2022-06-25 18:55:52,712]: Device is shutting down, will wait 2 minutes. 
 [INFO] [2022-06-25 18:55:52,712]: Created file: completed_devices/JAB20054512.log 
+[INFO] [2022-06-25 19:02:40,488]: Ping: Successful 
+[INFO] [2022-06-25 19:02:41,127]: Login failed, will try again in 30 seconds. 
+[INFO] [2022-06-25 19:03:11,160]: Ping: Successful 
+[INFO] [2022-06-25 19:03:30,274]: Login: Successful 
+[INFO] [2022-06-25 19:03:30,275]: All services are running 
+[INFO] [2022-06-25 19:03:30,275]: SERIAL NUMBER: [] 
+[INFO] [2022-06-25 19:03:30,275]: [] has the right version: 21.1.4 
+[INFO] [2022-06-25 19:03:30,275]: Device does not have WAN interface in correct VRF. 
+[INFO] [2022-06-25 19:03:40,288]: Ping: Successful 
+[INFO] [2022-06-25 19:03:47,332]: Login: Successful 
+[INFO] [2022-06-25 19:03:47,333]: All services are running 
+[INFO] [2022-06-25 19:03:47,334]: SERIAL NUMBER: JAB20054512 
+[INFO] [2022-06-25 19:03:47,334]: JAB20054512 has the right version: 21.1.4 
+[INFO] [2022-06-25 19:03:47,335]: Device has WAN interface in correct VRF. 
+[INFO] [2022-06-25 19:03:47,335]: Will stop script for 2 minutes, then shutdown device. 
+[ERROR] [2022-06-25 19:04:18,002]: quest system shutdown
+Will shutdown the system. Are you sure? [no,yes] yes
+ 
+[INFO] [2022-06-25 19:04:18,504]: COMPLETED JAB20054512 COMPLETED 
+[INFO] [2022-06-25 19:04:18,505]: Device is shutting down, will wait 2 minutes. 
+[INFO] [2022-06-25 19:04:18,506]: Created file: completed_devices/JAB20054512.log 
