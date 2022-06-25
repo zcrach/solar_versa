@@ -301,3 +301,27 @@ Will shutdown the system. Are you sure? [no,yes] yes
 [INFO] [2022-06-25 19:17:12,918]: Login: Successful 
 [INFO] [2022-06-25 19:17:12,919]: Lost connection when getting variables 
 [INFO] [2022-06-25 19:17:12,922]: Ping: Successful 
+[INFO] [2022-06-25 20:19:44,846]: Ping: Successful 
+[INFO] [2022-06-25 20:19:45,458]: Login failed, will try again in 30 seconds. 
+[INFO] [2022-06-25 20:20:15,492]: Ping: Successful 
+[INFO] [2022-06-25 20:20:16,456]: Login: Successful 
+[INFO] [2022-06-25 20:20:16,457]: Lost connection when getting variables 
+[INFO] [2022-06-25 20:20:26,470]: Ping: Successful 
+[INFO] [2022-06-25 20:20:33,983]: Login: Successful 
+[INFO] [2022-06-25 20:20:33,983]: All services are running 
+[INFO] [2022-06-25 20:20:33,983]: SERIAL NUMBER: JAB20054512 
+[INFO] [2022-06-25 20:20:33,983]: JAB20054512 has the right version: 21.1.4 
+[INFO] [2022-06-25 20:21:04,014]: Device does not have WAN interface in correct VRF. 
+[INFO] [2022-06-25 20:21:14,027]: Ping: Successful 
+[INFO] [2022-06-25 20:21:21,635]: Login: Successful 
+[INFO] [2022-06-25 20:21:21,636]: All services are running 
+[INFO] [2022-06-25 20:21:21,637]: SERIAL NUMBER: JAB20054512 
+[INFO] [2022-06-25 20:21:21,637]: JAB20054512 has the right version: 21.1.4 
+[INFO] [2022-06-25 20:21:51,668]: Device has WAN interface in correct VRF. 
+[INFO] [2022-06-25 20:21:51,668]: Will stop script for 1 minutes, then shutdown device. 
+[ERROR] [2022-06-25 20:23:22,371]: quest system shutdown
+Will shutdown the system. Are you sure? [no,yes] yes
+ 
+[INFO] [2022-06-25 20:23:22,873]: COMPLETED JAB20054512 COMPLETED 
+[INFO] [2022-06-25 20:23:22,874]: Device is shutting down, will wait 2 minutes. 
+[INFO] [2022-06-25 20:23:22,875]: Created file: completed_devices/JAB20054512.log 
