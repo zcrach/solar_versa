@@ -1,0 +1,34 @@
+[INFO] [2022-06-25 18:50:12,307]: Ping: Successful 
+[INFO] [2022-06-25 18:50:19,764]: Login: Successful 
+[INFO] [2022-06-25 18:50:19,765]: All services are running 
+[INFO] [2022-06-25 18:50:19,765]: SERIAL NUMBER: JAB20054512 
+[INFO] [2022-06-25 18:50:19,765]: JAB20054512 has the right version: 21.1.4 
+[INFO] [2022-06-25 18:50:19,766]: Device has WAN interface in correct VRF. 
+[INFO] [2022-06-25 18:50:19,766]: Will stop script for 2 minutes, then shutdown device. 
+[ERROR] [2022-06-25 18:50:50,432]: quest system shutdown
+Will shutdown the system. Are you sure? [no,yes] yes
+ 
+[INFO] [2022-06-25 18:50:50,935]: COMPLETED JAB20054512 COMPLETED 
+[INFO] [2022-06-25 18:50:50,935]: Device is shutting down, will wait 2 minutes. 
+[INFO] [2022-06-25 18:50:50,936]: Created file: completed_devices/JAB20054512.log 
+[INFO] [2022-06-25 18:54:13,350]: Ping: Successful 
+[INFO] [2022-06-25 18:54:13,958]: Login failed, will try again in 30 seconds. 
+[INFO] [2022-06-25 18:54:43,993]: Ping: Successful 
+[INFO] [2022-06-25 18:55:00,313]: Login: Successful 
+[INFO] [2022-06-25 18:55:00,314]: All services are running 
+[INFO] [2022-06-25 18:55:00,314]: SERIAL NUMBER: [] 
+[INFO] [2022-06-25 18:55:00,315]: [] has the right version: 21.1.4 
+[INFO] [2022-06-25 18:55:00,315]: Device does not have WAN interface in correct VRF. 
+[INFO] [2022-06-25 18:55:10,329]: Ping: Successful 
+[INFO] [2022-06-25 18:55:21,555]: Login: Successful 
+[INFO] [2022-06-25 18:55:21,555]: All services are running 
+[INFO] [2022-06-25 18:55:21,555]: SERIAL NUMBER: JAB20054512 
+[INFO] [2022-06-25 18:55:21,555]: JAB20054512 has the right version: 21.1.4 
+[INFO] [2022-06-25 18:55:21,555]: Device has WAN interface in correct VRF. 
+[INFO] [2022-06-25 18:55:21,556]: Will stop script for 2 minutes, then shutdown device. 
+[ERROR] [2022-06-25 18:55:52,210]: quest system shutdown
+Will shutdown the system. Are you sure? [no,yes] yes
+ 
+[INFO] [2022-06-25 18:55:52,711]: COMPLETED JAB20054512 COMPLETED 
+[INFO] [2022-06-25 18:55:52,712]: Device is shutting down, will wait 2 minutes. 
+[INFO] [2022-06-25 18:55:52,712]: Created file: completed_devices/JAB20054512.log 
