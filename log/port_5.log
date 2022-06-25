@@ -1,1 +1,0 @@
-[INFO] [2022-06-25 19:13:10,135]: Unable to delete hosts file, it either does not exist, has the wrong privileges or path: /root/.ssh/known_hosts 

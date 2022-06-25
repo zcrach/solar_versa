@@ -1,28 +1,18 @@
-[INFO] [2022-06-25 20:13:34,503]: Ping: Successful 
-[INFO] [2022-06-25 20:13:41,494]: Login: Successful 
-[INFO] [2022-06-25 20:13:41,496]: All services are running 
-[INFO] [2022-06-25 20:13:41,497]: SERIAL NUMBER: JAB20054512 
-[INFO] [2022-06-25 20:13:41,497]: JAB20054512 has the right version: 21.1.4 
-[INFO] [2022-06-25 20:14:11,528]: Device has WAN interface in correct VRF. 
-[INFO] [2022-06-25 20:14:11,528]: Will stop script for 1 minutes, then shutdown device. 
-[ERROR] [2022-06-25 20:15:42,196]: quest system shutdown
-Will shutdown the system. Are you sure? [no,yes] yes
- 
-[INFO] [2022-06-25 20:15:42,698]: COMPLETED JAB20054512 COMPLETED 
-[INFO] [2022-06-25 20:15:42,698]: Device is shutting down, will wait 2 minutes. 
-[INFO] [2022-06-25 20:15:42,698]: Created file: completed_devices/JAB20054512.log 
-[INFO] [2022-06-25 20:19:52,768]: Ping: Successful 
-[INFO] [2022-06-25 20:19:53,382]: Login failed, will try again in 30 seconds. 
-[INFO] [2022-06-25 20:20:23,415]: Ping: Successful 
-[INFO] [2022-06-25 20:20:24,523]: Login: Successful 
-[INFO] [2022-06-25 20:20:24,523]: All services are running 
-[INFO] [2022-06-25 20:20:24,523]: SERIAL NUMBER: JAB20054512 
-[INFO] [2022-06-25 20:20:24,523]: JAB20054512 has the right version: 21.1.4 
-[INFO] [2022-06-25 20:20:54,554]: Device has WAN interface in correct VRF. 
-[INFO] [2022-06-25 20:20:54,555]: Will stop script for 1 minutes, then shutdown device. 
-[ERROR] [2022-06-25 20:22:25,639]: quest system shutdown
-Will shutdown the system. Are you sure? [no,yes] yes
- 
-[INFO] [2022-06-25 20:22:26,141]: COMPLETED JAB20054512 COMPLETED 
-[INFO] [2022-06-25 20:22:26,142]: Device is shutting down, will wait 2 minutes. 
-[INFO] [2022-06-25 20:22:26,143]: Created file: completed_devices/JAB20054512.log 
+[INFO] [2022-06-25 21:42:06,910]: Ping: Successful 
+[INFO] [2022-06-25 21:42:07,520]: Login failed, will try again in 30 seconds. 
+[INFO] [2022-06-25 21:42:37,554]: Ping: Successful 
+[INFO] [2022-06-25 21:42:39,381]: Login: Successful 
+[INFO] [2022-06-25 21:42:39,381]: Unable to get variables, trying again. 
+[INFO] [2022-06-25 21:42:49,395]: Ping: Successful 
+[INFO] [2022-06-25 21:43:02,574]: Login: Successful 
+[INFO] [2022-06-25 21:43:02,575]: Some services have stopped, will try again in 2 minutes. 
+[INFO] [2022-06-25 21:45:02,587]: Ping: Successful 
+[INFO] [2022-06-25 21:45:13,462]: Login: Successful 
+[INFO] [2022-06-25 21:45:13,462]: All services are running 
+[INFO] [2022-06-25 21:45:13,463]: SERIAL NUMBER: JAB20165269 
+[INFO] [2022-06-25 21:45:13,463]: JAB20165269 has the right version: 21.1.4 
+[INFO] [2022-06-25 21:45:43,493]: Device has WAN interface in correct VRF. 
+[INFO] [2022-06-25 21:45:43,494]: Will stop script for 1 minutes, then shutdown device. 
+[INFO] [2022-06-25 21:47:14,888]: COMPLETED JAB20165269 COMPLETED 
+[INFO] [2022-06-25 21:47:14,889]: Device is shutting down, will wait 2 minutes. 
+[INFO] [2022-06-25 21:47:14,889]: Created file: completed_devices/JAB20165269.log 
