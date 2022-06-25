@@ -45,6 +45,9 @@ Also verify that monit is running.
 Can check by doing:
 systemctl show status 
 
+You can check log for each port under /home/solar/versa_upgrade/log/port_*.log
+
+
 
 
 Additional information:
