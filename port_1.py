@@ -134,7 +134,7 @@ def versa_upload():
     try:
         cmd = f'sshpass -p {password} scp -o StrictHostKeyChecking=no /home/solar/versa_upgrade/{image_filename} {username}@{hostname}:/home/versa/packages/'
         output = subprocess.check_output(cmd, shell=True)
-        logger.info(output) #ISSUES#Need to add decode
+        logger.info(output.decode()) #ISSUES#Need to add decode
         return True
     except:
         return False
@@ -240,7 +240,7 @@ def main():
                             else:
                                 #If it's the wrong version, and image is uploaded, start upgrade. 
                                 logger.info(f"{versa_sn} has the wrong version: {versa_release}")
-                                if image_filename in versa_ls: #ISSUE#Not working, always thinks it does not exist. Issue with (str?)
+                                if str(image_filename) in str(versa_ls): #ISSUE#Not working, always thinks it does not exist. Issue with (str?)
                                     logger.info(f"{versa_sn} has {image_filename} in /home/versa/packages")
                                     if not versa_upgrade():
                                         logger.info(f"{versa_sn} Failed to upgrade device with {image_filename}.")
@@ -278,9 +278,3 @@ def main():
         logger.warning(f"Session has been stopped with Ctrl+C.")
 if __name__ == '__main__':
     main()
-
-
-
-
-
-
