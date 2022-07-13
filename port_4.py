@@ -40,7 +40,7 @@ def versa_login():
             versa_sn = versa_parse_output(ch, "vsh details", "Serial number")
             versa_release = versa_parse_output(ch, "vsh details", "Release")
             versa_details = send_and_expect(ch, 'vsh details', prompt)
-            versa_ls = send_and_expect(ch, 'ls /home/versa/packages', prompt)
+            versa_ls = send_and_expect(ch, 'ls -al /home/versa/packages', prompt)
             send_and_expect(ch, 'vsh status', "admin:")
             versa_status = send_and_expect(ch, password, prompt)
             versa_interfaces = cli_send_and_expect(ch, 'show interfaces brief | tab | nomore')
@@ -111,6 +111,13 @@ def versa_ping(response=None):
     while response != 0:
         response = os.system("ping -c 1 " + hostname)
     else:
+        global versa_sn, versa_release, versa_details, versa_ls, versa_status, versa_interfaces
+        versa_sn = None
+        versa_release = None
+        versa_details = None
+        versa_ls = None
+        versa_status = None
+        versa_interfaces = None
         return True
 
 
@@ -240,31 +247,22 @@ def main():
                             else:
                                 #If it's the wrong version, and image is uploaded, start upgrade. 
                                 logger.info(f"{versa_sn} has the wrong version: {versa_release}")
-                                if str(image_filename) in str(versa_ls): #ISSUE#Not working, always thinks it does not exist. Issue with (str?)
-                                    logger.info(f"{versa_sn} has {image_filename} in /home/versa/packages")
+
+                            #If it's the wrong version, and image is not uploaded, upload then start upgrade. 
+                                logger.info(f"starting upload of image")
+                                if not versa_upload():
+                                    logger.info(f"{versa_sn} Failed to upload {image_filename} to /home/versa/packages")
+                                    time.sleep(30)
+                                else:
+                                    logger.info(f"{versa_sn} Successfully uploaded {image_filename} to /home/versa/packages")
+                                    time.sleep(10)
                                     if not versa_upgrade():
                                         logger.info(f"{versa_sn} Failed to upgrade device with {image_filename}.")
-                                        time.sleep(30)
+                                        time.sleep(10)
                                     else:
                                         logger.info(f"{versa_sn} Successfully started upgrade of device with {image_filename}.")
                                         logger.info(f"{versa_sn} Waiting 5 minutes for the device to complete upgrade.")
                                         time.sleep(300)
-                                else:
-                                #If it's the wrong version, and image is not uploaded, upload then start upgrade. 
-                                    logger.info(f"{versa_sn} is missing {image_filename}, starting upload")
-                                    if not versa_upload():
-                                        logger.info(f"{versa_sn} Failed to upload {image_filename} to /home/versa/packages")
-                                        time.sleep(30)
-                                    else:
-                                        logger.info(f"{versa_sn} Successfully uploaded {image_filename} to /home/versa/packages")
-                                        time.sleep(10)
-                                        if not versa_upgrade():
-                                            logger.info(f"{versa_sn} Failed to upgrade device with {image_filename}.")
-                                            time.sleep(10)
-                                        else:
-                                            logger.info(f"{versa_sn} Successfully started upgrade of device with {image_filename}.")
-                                            logger.info(f"{versa_sn} Waiting 5 minutes for the device to complete upgrade.")
-                                            time.sleep(300)
                         else:
                             #vsh not avaiable, usually from trying too fast after reboot / upgrade. Just try again.
                             logger.info("Status is not stopped or running")  
