@@ -6,8 +6,8 @@ from versa_variables import *
 
 #Variable to change ports.
 #If going above port 9, modify hostname. 
-port_number = 5
-hostname = f"172.16.10{port_number}.1"
+port_number = 10
+hostname = f"172.16.1{port_number}.1"
 username = "admin"
 password = "versa123"
 prompt = "\$"
